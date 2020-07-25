@@ -1,0 +1,115 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<p id="pp">hello</p>
+<input type="button" value="1" onclick="test()" />
+<input type="button" value="2" ondblclick="test2()" />
+<input type="button" value="3!" ondblclick="test3()" />
+<input type="button" value="4" ondblclick="test4()" />
+<input type="button" value="5" ondblclick="test5()" />
+<input type="button" value="6" ondblclick="test6()" />
+<input type="button" value="click this!" ondblclick="test7()" />
+<input type="button" value="click this!" ondblclick="test8()" />
+<input type="button" value="click this!" ondblclick="test9()" />
+<input type="button" value="click this!" ondblclick="test10()" />
+<input type="button" value="click this!" ondblclick="test11()" />
+<input type="button" value="click this!" ondblclick="test12()" />
+<input type="button" value="click this!" ondblclick="test13()" />
+<input type="button" value="click this!" ondblclick="test14()" />
+
+</body>
+<script>
+function test() {
+  var a = 1;
+  var b = 2;
+  var c = a + b;
+  alert(c);
+  
+}
+function test2() {
+    var a=1
+    a= a + 2
+  alert(a)
+}
+
+function test3 () {
+alert('kkk');
+}
+
+
+function test4 () {
+    var a=1;
+    if (a>0) {
+    alert ('big');
+    } else {
+        alert('small');
+    };
+}
+
+function test5 () {
+    var a = -1;
+    if (a>0) {
+    alert ('big');
+    } else if (a == 0) {
+        alert ('same');
+    } else {
+        alert('small');
+    };
+}
+
+function test6 () {
+    var a = -1;
+    if (a != 0) {
+    alert ('hello');
+    } else {
+        alert('kkk');
+}
+
+function test7 () {
+    var a = [1, 2, 3, 4, 5];
+    alert(a[0])
+}
+
+function test8 () {
+    var a = 1;
+    for (var i = 0; i < 5 ; i++ ) {
+        a = a + i;
+    }
+    alert(a);
+}
+
+function test9 () {
+    var a = 1;
+    var b = [1 , 2 , 3 , 4 , 5];
+
+    for (var i of b) {
+        a = a + i;
+    }
+    alert(a);
+}
+
+function test10 () {
+    var c = { 'a': 1, 'b' : 2, 'c' : 3 };
+    var student = { 'name' : '김재윤' , 'age' : 27 , 'school' : 'SNU'};
+    alert (student.name);
+    }
+
+function test11 () {
+    var a = document.getElementById ('pp'); 
+    a.innerHTML = 'popo';
+    }
+
+function test12 () {
+    var a = document.getElementById ('pp'); 
+   if (a.innerHTML = 'hello') {
+       a.innerHTML = 'popo' ; 
+   } else {
+       a.innerHTML = 'hello'
+   }
+    }
+
+</script>
+</html>
